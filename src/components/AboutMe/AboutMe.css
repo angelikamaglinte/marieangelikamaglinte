@@ -1,0 +1,128 @@
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    max-width: 1100px;
+    /* smaller width */
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+}
+
+/* layout for content (text + image) */
+.about-me-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* left side - text */
+.about-me-text {
+    max-width: 55%;
+}
+
+/* "my story" & "01" */
+.about-me-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid black;
+    /* padding-bottom: 10px; */
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.story-text {
+    text-transform: uppercase;
+}
+
+.story-number {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 2px 8px;
+}
+
+/* about me title */
+/* .about-me-title p {
+    font-size: 60px;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+} */
+
+.about-me-title {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    height: 60px;
+    /* or however tall you want the marquee */
+    display: flex;
+    align-items: center;
+    /* center text vertically if desired */
+}
+
+.marquee-text {
+    display: inline-block;
+    font-size: 60px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+/* about me description */
+.about-me-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin: 86px 0px 0px 0px;
+}
+
+/* right side - image */
+.about-me-image img {
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+    align-items: self-start;
+}
+
+/* more about me button*/
+.about-me-button {
+    margin-top: 45px;
+    align-items: flex-start;
+    width: 1100px;
+}
+
+.about-me-button button {
+    border: 1px solid black;
+    border-radius: 100px;
+    background: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.more-about-me-btn {
+    text-decoration: none;
+}
+
+.about-me-button button:hover {
+    background: black;
+    color: white;
+}
+
+.arrow-icon {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.about-me-button button:hover .arrow-icon {
+    transform: translateY(-3px);
+}
