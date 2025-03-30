@@ -30,7 +30,7 @@ const Home = () => {
                 <SectionLabel
                     leftText="(SERVICES)"
                     rightText="02"
-                    title="EXPERTISE &nbsp;&nbsp;&nbsp; EXPERTISE"
+                    title="EXPERTISE"
                 />
                 <Expertise />
             </div>

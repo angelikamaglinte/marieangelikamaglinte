@@ -31,3 +31,27 @@
     font-weight: bolder;
     margin: 0px 0px 16px 0px;
 }
+
+.project-image {
+    overflow: hidden;
+    /* Ensures zoom effect stays within bounds */
+    display: inline-block;
+    border-radius: 29px;
+    /* Adjust to match your design */
+}
+
+.project-image img {
+    transition: transform 0.3s ease-in-out;
+    /* Smooth zoom effect */
+    border-radius: 29px;
+    /* Ensures image corners remain rounded */
+    display: block;
+    width: 100%;
+    /* Maintain responsiveness */
+    height: auto;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.1);
+    /* Zoom effect */
+}
