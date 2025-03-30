@@ -1,0 +1,94 @@
+.contact-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 170px 0px;
+    /* smaller width */
+    /* margin: 0 auto;   */
+    font-family: "Inter", sans-serif;
+    border-top: 1px solid black;
+}
+
+.contact-section-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 170px 0px;
+}
+
+.contact-title .marquee span {
+    font-size: 100px;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0px 0px 54px 0px;
+}
+/* Marquee styles for the title */
+.contact-title {
+    width: 100%;
+    overflow: hidden; /* Hide the sliding overflow */
+    margin-bottom: 20px;
+}
+
+.marquee {
+    display: inline-flex;
+    white-space: nowrap;
+    /* The animation duration can be adjusted for speed */
+    animation: marquee 10s linear infinite;
+}
+
+.marquee span {
+    /* Adjust spacing between the copies */
+    margin-right: 50px;
+    text-transform: uppercase;
+}
+
+/* Keyframes: Slide the marquee to the left by half of its width (one copy's width) */
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.contact-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 54px 0px;
+    border-top: 1px solid black;
+}
+
+.contact-description p {
+    margin: 0;
+    width: 50%;
+}
+
+.contact-me-btn-link {
+    text-decoration: none;
+}
+
+.contact-me-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 100px;
+    background: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-me-btn-arrow-icon {
+    font-size: 22px;
+    margin-left: 8px;
+    position: relative;
+    top: 1px;
+}

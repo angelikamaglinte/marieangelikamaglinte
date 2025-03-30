@@ -1,11 +1,13 @@
 import React from 'react'
 import './About.css'
 import Header from '../../components/Header/Header'
-import SectionHeader from '../../components/SectionHeader/SectionHeader'
+import AboutMe from '../../components/AboutMe/AboutMe'
+import Expertise from '../../components/Expertise/Expertise'
 
 const About = () => {
     return (
         <div className='about-container'>
+            {/* header */}
             <Header
                 mainTitle="ABOUT ME"
                 leftText="Based in Calgary, AB, Canada"
@@ -13,7 +15,11 @@ const About = () => {
                 rightText="Scroll Down"
             />
 
-            
+            {/* about me */}
+            <AboutMe />
+
+            {/* expertise */}
+            <Expertise />
         </div>
     )
 }

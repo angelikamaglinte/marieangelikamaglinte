@@ -1,13 +1,9 @@
-import React from "react";
-import './Portfolio.css'
-import ProjectCard from "./ProjectCard";
-
 const projects = [
     {
         year: 2025,
         title: "GLUU",
         tags: ["UI/UX Design", "Full-Stack Development", "Web Development", "Web Design"],
-        image: "gluu_mockup", // Reference key from assets.js
+        image: "gluu_mockup",
     },
     {
         year: 2025,
@@ -41,14 +37,4 @@ const projects = [
     },
 ];
 
-const Portfolio = ({ setHoveringCard }) => {
-    return (
-        <div className="portfolio">
-            {projects.map((project, index) => (
-                <ProjectCard key={index} project={project} setHoveringCard={setHoveringCard} />
-            ))}
-        </div>
-    );
-};
-
-export default Portfolio;
+export default projects;

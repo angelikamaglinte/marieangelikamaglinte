@@ -12,16 +12,16 @@ const Footer = () => {
                         <LuArrowUp className="footer-arrow-icon" style={{ fontSize: "5rem", color: "white" }} />
                     </a>
                 </div>
-
+  
                 <div className="footer-right-columns">
                     <div className="footer-column">
-                        <p><FaLinkedin /> LinkedIn</p>
-                        <p><FaGithub /> GitHub</p>
-                        <p><FaInstagram /> Instagram</p>
+                        <p className="socials"><FaLinkedin style={{ verticalAlign: "middle" }} /> LinkedIn</p>
+                        <p className="socials"><FaGithub style={{ verticalAlign: "middle" }} /> GitHub</p>
+                        <p className="socials"><FaInstagram style={{ verticalAlign: "middle" }} /> Instagram</p>
                     </div>
                     <div className="footer-column">
-                        <p><FaBehance /> BeBehance</p>
-                        <p><FaDribbble /> Dribbble</p>
+                        <p className="socials"><FaBehance style={{ verticalAlign: "middle" }} /> BeBehance</p>
+                        <p className="socials"><FaDribbble style={{ verticalAlign: "middle" }} /> Dribbble</p>
                     </div>
                 </div>
             </div>
