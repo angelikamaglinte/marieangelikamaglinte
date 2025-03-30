@@ -1,6 +1,7 @@
 import React from 'react'
 import './Header.css'
 import assets from '../../assets'
+import { ArrowDownRight } from 'lucide-react'
 
 const Header = ({ mainTitle, leftText, centerText, rightText }) => {
     return (
@@ -12,7 +13,7 @@ const Header = ({ mainTitle, leftText, centerText, rightText }) => {
             <div className="heading-subtext">
                 <p className="heading-left">{leftText}</p>
                 <p className="heading-center">{centerText}</p>
-                <p className="heading-right">{rightText}</p>
+                <p className="heading-right">{rightText} <ArrowDownRight size={20} style={{ verticalAlign: "bottom" }} className="scroll-icon" /></p>
             </div>
 
             {/* mockup feature */}

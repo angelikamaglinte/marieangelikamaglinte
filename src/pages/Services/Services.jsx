@@ -6,6 +6,7 @@ import PortfolioSection from "../../components/Portfolio/PortfolioSection";
 import CursorTracker from "../../components/CursorTracker/CursorTracker";
 import { Link } from "react-router-dom";
 import { LuArrowUpRight } from 'react-icons/lu';
+import SectionLabel from "../../components/SectionLabel/SectionLabel";
 
 const Services = () => {
     const [hoveringCard, setHoveringCard] = useState(false);
@@ -21,6 +22,11 @@ const Services = () => {
             />
 
             {/* expertise */}
+            <SectionLabel
+                leftText="(SERVICES)"
+                rightText="01"
+                title="EXPERTISE"
+            />
             <Expertise />
 
             {/* show "View Project" if user is hovering on a project card - custom cursor */}

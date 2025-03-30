@@ -9,6 +9,7 @@ import PortfolioSection from '../../components/Portfolio/PortfolioSection'
 import { Link } from 'react-router-dom'
 import { LuArrowUpRight } from 'react-icons/lu';
 import CursorTracker from '../../components/CursorTracker/CursorTracker'
+import SectionLabel from '../../components/SectionLabel/SectionLabel'
 
 const Home = () => {
     const [hoveringCard, setHoveringCard] = useState(false);
@@ -25,7 +26,14 @@ const Home = () => {
             <AboutMe />
 
             {/* expertise */}
-            <Expertise />
+            <div className='expertise-section'>
+                <SectionLabel
+                    leftText="(SERVICES)"
+                    rightText="02"
+                    title="EXPERTISE"
+                />
+                <Expertise />
+            </div>
 
             {/* section header */}
             <SectionHeader

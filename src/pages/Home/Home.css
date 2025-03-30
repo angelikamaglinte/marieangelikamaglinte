@@ -2,6 +2,10 @@
     padding: 2rem 4rem;
 }
 
+.expertise-section {
+    padding: 120px 0px 0px 0px;
+}
+
 .view-all-projects-btn-container {
     display: flex;
     margin: 0 auto;
