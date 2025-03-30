@@ -23,33 +23,37 @@
     margin: 0;
     padding: 0px 0px 54px 0px;
 }
+
 /* Marquee styles for the title */
 .contact-title {
     width: 100%;
-    overflow: hidden; /* Hide the sliding overflow */
+    overflow: hidden; /* Hide the overflowing content */
     margin-bottom: 20px;
+    position: relative;
 }
 
 .marquee {
-    display: inline-flex;
-    white-space: nowrap;
-    /* The animation duration can be adjusted for speed */
-    animation: marquee 10s linear infinite;
+    display: flex;
+    width: 250%;  /* Container is twice as wide as one copy */
+    animation: marquee 5s linear infinite;
 }
 
 .marquee span {
-    /* Adjust spacing between the copies */
-    margin-right: 50px;
+    width: 20%;            /* Each copy takes 50% of the container */
+    display: inline-block; /* Ensures the span respects the width */
+    text-align: center;    /* Center the text within each half */
+    font-size: 100px;
+    font-weight: bolder;
     text-transform: uppercase;
 }
 
-/* Keyframes: Slide the marquee to the left by half of its width (one copy's width) */
+/* Animate from 0% to -50% so one full copy scrolls out */
 @keyframes marquee {
     0% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-20%);
     }
 }
 

@@ -7,12 +7,12 @@ const ContactSection = () => {
     return (
         <div className="contact-section-container">
             <div className="contact-section-content">
-                {/* Contact Title */}
+                {/* Contact Title with continuous marquee */}
                 <div className="contact-title">
                     <div className="marquee">
-                        <span>CONTACT ME &nbsp;&nbsp;&nbsp;</span>
-                        <span>CONTACT ME</span>
+                        <span className="marquee-text">CONTACT ME</span><span className="marquee-text">CONTACT ME</span><span className="marquee-text">CONTACT ME</span>
                     </div>
+
                 </div>
 
                 {/* Contact Description */}
