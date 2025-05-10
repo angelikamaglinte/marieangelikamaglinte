@@ -2,6 +2,7 @@ import am_logo from './assets/logo/am-logo.png';
 import hero_mockup from './assets/mockups/hero-mockup.png';
 import about_me_img from './assets/images/about-me-img.png';
 import mockup_feature from './assets/mockups/mockup-feature.png';
+import aurea_mockup from './assets/mockups/aurea-mockup.png';
 import gluu_mockup from './assets/mockups/gluu-repair-mockup.png';
 import plantify_mockup from './assets/mockups/plantify-mockup.png';
 import amd_mockup from './assets/mockups/amd-studio-mockup.png';
@@ -14,6 +15,7 @@ const assets = {
   hero_mockup,
   about_me_img,
   mockup_feature,
+  aurea_mockup,
   gluu_mockup,
   plantify_mockup,
   amd_mockup,

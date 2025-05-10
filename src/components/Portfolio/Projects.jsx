@@ -1,6 +1,13 @@
 const projects = [
     {
         year: 2025,
+        title: "Auréa",
+        tags: ["UI/UX Design", "Full-Stack Development", "Web Development", "Web Design"],
+        image: "aurea_mockup",
+        url: "https://aurea.vercel.app"
+    },
+    {
+        year: 2025,
         title: "GLUU",
         tags: ["UI/UX Design", "Full-Stack Development", "Web Development", "Web Design"],
         image: "gluu_mockup",
