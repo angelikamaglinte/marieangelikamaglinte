@@ -9,6 +9,7 @@ import amd_mockup from './assets/mockups/amd-studio-mockup.png';
 import nosh_mockup from './assets/mockups/nosh-&-nook-mockup.png';
 import page_pilot from './assets/mockups/page-pilot-mockup.png';
 import flex_workspace from './assets/mockups/flex-workspace-mockup.png';
+import nuvora_mockup from './assets/mockups/nuvora-mockup.png'
 
 const assets = {
   am_logo,
@@ -21,7 +22,8 @@ const assets = {
   amd_mockup,
   nosh_mockup,
   page_pilot,
-  flex_workspace
+  flex_workspace,
+  nuvora_mockup
 };
 
 export default assets;
